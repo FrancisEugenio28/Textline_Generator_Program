@@ -7,6 +7,11 @@ with open("myLife.txt", "w") as life_file:
     while True:
         #create an input for th user 
         line_input = input("Enter a line: ")
+        #add a import time for loading effect
+        import time
+        print("Printing your entered line in the txt file...")
+        time.sleep(1)
+        print("DONE!")
         #ask the user if he/she want to add a line
         retry = input("Do you want to add a line? (y/n): ").upper()
         if retry != "Y":
